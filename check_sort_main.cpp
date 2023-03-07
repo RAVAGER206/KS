@@ -1,78 +1,86 @@
 #include <iostream>
 #include <vector>
-#include <fstream>
+#include "check_sortic.h"
 #include <string>
-#include "sort.h"
+#include <fstream>
 using namespace std;
 
 //////////////////////////-MAIN-//////////////////////////
 
-int main() // START
+int main()
 {
-int a, b, c, d;
-ofstream file;
-string e, f;
-
-cin >> f;
-
-d = 0;
-
-vector <int> a2;
-vector <int> b2;
-vector <int> c2;
-
+vector <int> a1;
+ifstream file;
 file.open("mass.txt");
-
-for (int i = 0; f != "!"; i++) 
+string str;
+int k, i;
+  
+  
+vector <int> a;
+vector <int> b;
+  
+  
+string t;
+cin >> t;
+  
+while(t != "!"){
+a.push_back(cifrovizacia(t));
+cin >> t;
+}
+while(str != "con")
 {
-a2.push_back(mp(f));
-cin >> f;
+file >> str;
+  
+if (str != "con")
+cout << str << endl;
+  
+if (str == "sa")
+s(a);
+  
+if (str == "sb")
+s(b);
+  
+if (str == "ss"){
+s(a);
+s(b);
 }
 
-while (d < a2.size()) 
-{
-
-d = 0;
-c = mn(a2);
-
-while (a2[0] != c) 
-{
-
-ra(a2);
-
-file << "ra" << endl;
-cout << "ra" << endl;
+if(str == "pa")
+p(a1,b);
+  
+if(str =="pb")
+p(b,a);
+  
+if(str == "ra")
+r(a);
+  
+if(str == "rb")
+r(b);
+  
+if(str == "rr"){
+r(a);
+r(b);
+  
+}
+if(str == "rra")
+rr(a);
+  
+if(str == "rrb")
+rr(b);
+  
+if(str == "rrr"){
+rr(a);
+rr(b);
 }
 
-pb(c2, a2);
-
-file << "pb" << endl;
-cout << "pb" << endl;
-for (int l = 0; l < a2.size(); l++)
-if (a2[l] == 2147483647)
-d++;
 }
+if(rab(a1))
+cout << "OK" << endl;
+else
+cout << "KO" << endl;
 
-for (int i = 0; i < c2.size(); i++) 
-{
-
-rra(c2);
-
-file << "rrb" << endl;
-cout << "rrb" << endl;
-
-pb(b2, c2);
-
-file << "pa" << endl;
-cout << "pa" << endl;
+for (i = 0; i < a1.size(); i++)
+cout << a1[i] << " ";
 }
-
-zn(b2, a2);
-
-for (int i = 0; i < a2.size(); i++)
-cout << a2[i] << " ";
-file.close();
-return 0;
-} // end
 
 /////////////////////////////-END-/////////////////////////////
