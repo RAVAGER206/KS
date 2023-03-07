@@ -35,42 +35,42 @@ if (str != "con")
 cout << str << endl;
   
 if (str == "sa")
-s(a);
+sa(a);
   
 if (str == "sb")
-s(b);
+sa(b);
   
 if (str == "ss"){
-s(a);
-s(b);
+sa(a);
+sa(b);
 }
 
 if(str == "pa")
-p(a1,b);
+pb(a1,b);
   
 if(str =="pb")
-p(b,a);
+pb(b,a);
   
 if(str == "ra")
-r(a);
+ra(a);
   
 if(str == "rb")
-r(b);
+ra(b);
   
 if(str == "rr"){
-r(a);
-r(b);
+ra(a);
+ra(b);
   
 }
 if(str == "rra")
-rr(a);
+rra(a);
   
 if(str == "rrb")
-rr(b);
+rra(b);
   
 if(str == "rrr"){
-rr(a);
-rr(b);
+rra(a);
+rra(b);
 }
 
 }
