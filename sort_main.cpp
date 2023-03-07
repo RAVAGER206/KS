@@ -48,6 +48,7 @@ pb(c2, a2);
 
 file << "pb" << endl;
 cout << "pb" << endl;
+  
 for (int l = 0; l < a2.size(); l++)
 if (a2[l] == 2147483647)
 d++;
