@@ -23,6 +23,7 @@ vector <int> b;
 string t;
 cin >> t;
   
+//////////////////////////-LOGIC-//////////////////////////
 while(t != "!"){
 a.push_back(cifrovizacia(t));
 cin >> t;
@@ -72,7 +73,8 @@ if(str == "rrr"){
 rra(a);
 rra(b);
 }
-
+//////////////////////////-END_LOGIC-//////////////////////////
+  
 }
 if(rab(a1))
 cout << "OK" << endl;
