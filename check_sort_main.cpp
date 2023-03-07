@@ -25,7 +25,7 @@ cin >> t;
   
 //////////////////////////-LOGIC-//////////////////////////
 while(t != "!"){
-a.push_back(cifrovizacia(t));
+a.push_back(mp(t));
 cin >> t;
 }
 while(str != "con")
