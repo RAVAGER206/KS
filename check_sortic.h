@@ -8,20 +8,23 @@
 
 using namespace std;
 
+////////////////////////-FUNCTION.AHNIK-////////////////////////
 
 void sa (vector <int> &mass);
 
+void ra(vector <int>& mass);
+
+void rra(vector <int>& mass);
+
 void pb (vector <int> &mass, vector <int> &mass1);
 
-void rra(vector <int> &mass);
-
-void ra(vector <int> &mass);
+void zn(const vector <int>& cop, vector <int>& osn);
 
 int mp (string str);
 
 int mn (vector <int> mass);
 
-void zn (const vector <int> &cop, vector <int> &osn);
 
+/////////////////////////////-END-/////////////////////////////
 
 #endif
