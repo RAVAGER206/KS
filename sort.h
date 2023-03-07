@@ -24,6 +24,8 @@ int mp (string str);
 
 int mn (vector <int> mass);
 
+bool rab(vector <int> mass);
+
 
 /////////////////////////////-END-/////////////////////////////
 
