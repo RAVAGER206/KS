@@ -88,4 +88,14 @@ for (int i = 0; i < cop.size(); i++)
 osn[i] = cop[i];
 } // end
 
+
+bool rab(vector <int> mass)
+{
+for(int i = 0; i < mass.size()-1;i++){
+if(mass[i] > mass[i+1])
+return false;
+}
+return true;
+}
+
 /////////////////////////////-END-/////////////////////////////
